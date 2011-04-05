@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:padding="1dp">
+        
+        <!--  android:layout_height="?android:attr/listPreferredItemHeight" -->
+
+        <ImageView android:id="@+id/icon"
+                android:layout_width="48dp" 
+                android:layout_height="48dp"
+                android:minWidth="48dp" 
+                android:minHeight="48dp"
+                
+                android:layout_margin="5dp"
+                 />
+
+        <TextView android:id="@+id/scuola"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/icon" 
+               
+                android:layout_marginTop="5dp"
+                android:layout_width="170dp" 
+                
+                android:textStyle="bold"
+                android:textSize="20sp"
+               
+                
+                android:maxLines="2"
+                android:ellipsize="end" />
+        
+        <TextView android:id="@+id/destinatario"
+                
+                android:layout_width="170dp" android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/icon"
+                android:layout_below="@id/scuola" android:maxLines="2"
+                android:ellipsize="end"  />   
+
+        <TextView android:id="@+id/note"
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/destinatario"                
+				
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp" 
+                android:layout_marginRight="3dp"
+                android:textColor="#FFFFFF00"
+                
+                android:gravity="right" 
+                android:enabled="false" />
+        
+        <TextView android:id="@+id/scadenza"
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/destinatario"                
+				android:layout_below="@id/note"
+                
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp" 
+                android:layout_marginRight="3dp"
+                android:textColor="#ff00cccc"
+                
+                android:enabled="false" android:gravity="bottom|right"/>
+
+</RelativeLayout>
+

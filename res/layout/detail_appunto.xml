@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	
+	<TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:stretchColumns="1" 
+		android:paddingRight="5px">
+		
+		<TableRow>	
+			<TextView	
+				android:text="Dest.:"
+			/>
+			<EditText
+				android:id="@+id/destinatario"	
+				android:layout_span="2"
+				android:inputType="textCapWords"
+			/>
+			
+			
+		</TableRow>
+		<TableRow>	
+			<TextView	
+				android:text="Scuola:"
+			/>
+			<AutoCompleteTextView 
+				android:id="@+id/scuola"
+				android:completionThreshold="2"
+				android:inputType="textCapCharacters|textAutoComplete"
+				android:layout_span="2"
+			/>
+		</TableRow>
+		<TableRow>	
+			<TextView	
+				android:text="Telefono"
+			/>
+			<EditText
+				android:id="@+id/telefono"		
+				android:layout_span="2"
+				
+				android:inputType="number|numberSigned|numberDecimal"
+			/>
+		</TableRow>
+		<TableRow>	
+			<TextView	
+				android:text="Scadenza:"
+			/>
+			<Spinner 
+				android:id="@+id/spinner" 
+				android:layout_span="2"
+			/>
+		</TableRow>
+		<TableRow>	
+			<TextView	
+				android:text="Nota:"
+			/>
+			<EditText
+				android:id="@+id/note"	
+				android:inputType="text|textMultiLine|textAutoCorrect"
+				android:minLines="3"
+				android:gravity="top"
+				android:layout_span="2"
+			/>
+		</TableRow>
+		
+	
+	<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="horizontal"
+			android:layout_marginTop="5dp"
+			>
+			<Button 
+				android:id="@+id/salva"
+				android:text="Salva"
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				android:layout_weight="1" />
+			
+			<Button
+				android:id="@+id/annnulla"
+				android:text="Annulla" 
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				android:layout_weight="1"
+				/>
+		</LinearLayout>
+		
+		</TableLayout>
+</ScrollView>

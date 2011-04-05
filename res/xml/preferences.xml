@@ -1,0 +1,10 @@
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<ListPreference
+		android:key="sort_order"
+		android:title="Ordin per"
+		android:summary="Ordina gli appunti per"
+		android:entries="@array/sort_names"
+		android:entryValues="@array/sort_clauses"
+		android:dialogTitle="Scegli l'ordine" />
+</PreferenceScreen>

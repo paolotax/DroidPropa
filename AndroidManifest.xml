@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.tax.droidpropa"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".AppuntiLista"
+									android:label="@string/app_name">
+						<intent-filter>
+								<action android:name="android.intent.action.MAIN" />
+								<category android:name="android.intent.category.LAUNCHER" />
+						</intent-filter>
+						<intent-filter>
+								<action android:name="android.intent.action.SEARCH" />
+								<category android:name="android.intent.category.DEFAULT" />
+						</intent-filter>
+						<meta-data android:name="android.app.searchable"
+										android:resource="@xml/searchable" />
+						<meta-data android:name="android.app.default_searchable"
+										android:value=".LunchList" />
+				</activity>
+				<activity android:name=".DetailAppunto">
+				</activity>
+				<activity android:name=".EditPreferences">
+				</activity>
+				<activity android:name=".CallLogLista">
+				</activity>
+			
+
+    </application>
+    <uses-sdk android:minSdkVersion="7" />
+
+	    <uses-permission android:name="android.permission.READ_CONTACTS"> </uses-permission>
+	    <uses-permission android:name="android.permission.CALL_PHONE"> </uses-permission>
+	    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" ></uses-permission>
+	    
+
+	
+</manifest> 

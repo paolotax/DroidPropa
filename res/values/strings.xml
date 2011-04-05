@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Droid Propa</string>
+	<string name="searchLabel">Appunti</string>
+	<string name="searchHint">cerca appunti</string>
+	
+	 <string name="msgExternalStorageNAError">Storage Esterno non disponibile (o non è presente, o è montato su un PC?).</string>
+    
+</resources>

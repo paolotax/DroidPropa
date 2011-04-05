@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="sort_names">
+		<item>per Scuola, ascendente</item>
+		<item>per Scuola, discendente</item>
+		<item>per Destinatario, ascendente</item>
+		<item>per Destinatario, discendente</item>
+	</string-array>
+	<string-array name="sort_clauses">
+		<item>scuola ASC</item>
+		<item>scuola DESC</item>
+		<item>destinatario ASC</item>
+		<item>destinatario DESC</item>
+	</string-array>
+</resources>
